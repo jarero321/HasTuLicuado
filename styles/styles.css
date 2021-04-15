@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Rhodium+Libre&family=Ribeye+Marrow&display=swap");
+/* guia 
+font-family: 'Rhodium Libre', serif;
+font-family: 'Ribeye Marrow', cursive; */
+body {
+  background-color:#6ACD80;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.title {
+    font-family: "Ribeye Marrow", cursive;
+    text-align: center;
+    margin-top: 5%;
+    font-size:35px;
+
+}
+.main-container{
+    width:90vw;
+    height:40vh;
+    margin-left:5%;
+    margin-top: 5%;
+
+}
+.vaso{
+    margin-top: 15%;
+    margin-left: 15%;
+    width:70%;
+    height:100%;
+    background-color:#E3E3E3;
+    position: relative;
+    display:flex;
+    flex-direction: column-reverse;
+}
+.vaso::after{
+    content:"";
+    position: absolute;
+    top:-5%;
+    left:-10%;
+    height:5%;
+    width:120%;
+    background-color:#DDDDDD;
+}
+.vaso::before{
+    content:"";
+    position: absolute;
+    top:-10%;
+    left:-5%;
+    height:5%;
+    width:110%;
+    background-color:#DDDDDD;
+}
+.title-vaso{
+    position:absolute;
+    width:100%;
+    font-family:'Rhodium Libre', serif;
+    font-size: 13px;
+    text-align: center;
+    color:#6ACD80;
+    top:35%;
+}
+.item{
+    flex-basis: 20%;
+}
+.container-options{
+    margin-top:5%;
+    width:100%;
+    height:40vh;
+    display: flex;
+    flex-direction: column;
+}
+.item-option{
+    text-decoration: none;
+    color:black;
+    text-align: center;
+    width:90%;
+    margin: 0 auto;
+    flex-basis: 14%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-top: 3%;
+    border-radius: 20px;
+}
+/* sabores a elegir */
+
+.leche{
+    background-color:white;
+}
+.azucar{
+    background-color:white;
+}
+.papaya{
+    background-color: #FFD8BB;
+}
+.mango{
+    background-color: #F1FFBB;
+}
+.fresa{
+    background-color: #FFBBBB;
+}
+.platano {
+    background-color: #F1FFBB;
+}
+.modal{
+
+    position: fixed;
+    width:80%;
+    height:40%;
+    background-color: rgb(253, 222, 253);
+    z-index: 10;
+    left:10%;
+    top:20%;
+    box-shadow: 5px 5px 10px 0px rgba(80, 80, 80, 0.726);
+    display: none;
+    flex-direction: column;
+    justify-content:center;
+    text-align: center;
+}
+.visible {
+    display:flex;
+}
+.modal h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size:20px
+}
+.reiniciar {
+    font-family:'Courier New', Courier, monospace;
+    font-size:20px;
+    margin-top: 10%;
+    color:blue;
+}
